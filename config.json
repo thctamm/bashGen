@@ -1,0 +1,36 @@
+{
+    "home" : "hh",
+    "projects_root" : "~/Projects",
+    "classes" : [
+        {
+            "alias" : "61p",
+            "dir" : "cs61/cs61-f16-psets-tim-and-co",
+            "div" : "pset"
+        },
+        {
+            "alias" : "175",
+            "dir" : "cuanmartinezs-cs175-2016",
+            "div" : "asst"
+        },
+        {
+            "alias" : "121",
+            "dir" : "am121",
+            "div" : ""
+        }
+    ],
+    "partials" : [
+        "git.txt",
+        "bashgen.txt"
+    ],
+    "projects" : [
+        {"alias" : "61e", "dir": "cs61/cs61-exercises"},
+        {"alias" : "rand", "dir" : "rand"},
+        {"alias" : "web", "dir" : "website"},
+        {"alias" : "shgen", "dir" : "bashGen"}
+    ],
+    "aliases" : [
+        {"alias" : "hurc-aws", "cmd" : "sudo ssh -i ~/conf/hurc-web.pem ubuntu@ec2-52-91-229-108.compute-1.amazonaws.com"},
+        {"alias" : "star-wars", "cmd" : "telnet towel.blinkenlights.nl"},
+        {"alias" : "hurc-run", "cmd" : "cd ~/Projects/website; gulp build; sudo node server.js"}
+    ]
+}

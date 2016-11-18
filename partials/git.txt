@@ -1,0 +1,13 @@
+# Git commands
+gitcommit() {
+    git commit -am "$1";
+}
+
+alias gps="git push"
+alias gpu="git pull"
+alias gco="git checkout"
+alias gb="git branch"
+alias gs="git status"
+alias gc=gitcommit
+
+
