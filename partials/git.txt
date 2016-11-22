@@ -10,4 +10,3 @@ alias gb="git branch"
 alias gs="git status"
 alias gc=gitcommit
 
-

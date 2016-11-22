@@ -9,3 +9,4 @@ bashgen() {
     source ~/.bash_profile;
     cd $CURDIR;
 }
+

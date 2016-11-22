@@ -1,0 +1,14 @@
+dotdot() {
+    if [ $# -eq 0 ]
+        then
+            cd ..;
+        else
+            for ((c=1; c <= $1; c++))
+                do
+                    cd ..;
+                done      
+    fi
+}
+
+alias ..=dotdot
+

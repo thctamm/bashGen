@@ -20,6 +20,7 @@
     ],
     "partials" : [
         "git.txt",
+        "cd.txt",
         "bashgen.txt"
     ],
     "projects" : [
@@ -31,6 +32,13 @@
     "aliases" : [
         {"alias" : "hurc-aws", "cmd" : "sudo ssh -i ~/conf/hurc-web.pem ubuntu@ec2-52-91-229-108.compute-1.amazonaws.com"},
         {"alias" : "star-wars", "cmd" : "telnet towel.blinkenlights.nl"},
-        {"alias" : "hurc-run", "cmd" : "cd ~/Projects/website; gulp build; sudo node server.js"}
+        {"alias" : "hurc-run", "cmd" : "cd ~/Projects/website; gulp build; sudo node server.js"},
+        {"alias" : "bim", "cmd" : "vim"},
+        {"alias" : "ls", "cmd" : "ls --color=auto"},
+        {"alias" : "l.", "cmd" : "ls -d .*--color=auto"},
+        {"alias" : "grep", "cmd" : "grep --color=auto"},
+        {"alias" : "bc", "cmd" : "bc -l"},
+        {"alias" : "diff", "cmd" : "colordiff"},
+        {"alias" : "mkdir", "cmd" : "mkdir -pv"}
     ]
 }
