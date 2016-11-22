@@ -35,7 +35,7 @@
         {"alias" : "hurc-run", "cmd" : "cd ~/Projects/website; gulp build; sudo node server.js"},
         {"alias" : "bim", "cmd" : "vim"},
         {"alias" : "ls", "cmd" : "ls --color=auto"},
-        {"alias" : "l.", "cmd" : "ls -d .*--color=auto"},
+        {"alias" : "l.", "cmd" : "ls -d .* --color=auto"},
         {"alias" : "grep", "cmd" : "grep --color=auto"},
         {"alias" : "bc", "cmd" : "bc -l"},
         {"alias" : "diff", "cmd" : "colordiff"},
