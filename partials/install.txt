@@ -1,0 +1,23 @@
+sapti() {
+    sudo apt install $1;
+}
+
+setup-tools() {
+    sapti tmux; #tmux
+    sapti git; #git
+}
+
+setup-vim() {
+    sapti vim; # vim
+    curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh; # apt-vim
+    exec bash; # restart terminal
+    apt-vim install -y https://github.com/scrooloose/nerdtree.git; # nerd-tree
+    sapti ctags; # ctags
+}
+
+setup-all() {
+    setup-tools;
+    setup-vim;        
+}
+
+

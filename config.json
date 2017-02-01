@@ -3,31 +3,22 @@
     "projects_root" : "~/Projects",
     "classes" : [
         {
-            "alias" : "61p",
-            "dir" : "cs61/cs61-f16-psets-tim-and-co",
-            "div" : "pset"
-        },
-        {
-            "alias" : "175",
-            "dir" : "cuanmartinezs-cs175-2016",
-            "div" : "asst"
-        },
-        {
-            "alias" : "121",
-            "dir" : "am121",
+            "alias" : "161",
+            "dir" : "cs161/os161",
             "div" : ""
-        }
-    ],
+        }],
     "partials" : [
         "git.txt",
         "cd.txt",
-        "bashgen.txt"
+        "bashgen.txt",
+        "161.txt",
+        "install.txt"
     ],
     "projects" : [
-        {"alias" : "61e", "dir": "cs61/cs61-exercises"},
         {"alias" : "rand", "dir" : "rand"},
         {"alias" : "web", "dir" : "website"},
-        {"alias" : "shgen", "dir" : "bashGen"}
+        {"alias" : "shgen", "dir" : "bashGen"},
+        {"alias" : "soch", "dir" : "soch-cafe"}
     ],
     "aliases" : [
         {"alias" : "hurc-aws", "cmd" : "sudo ssh -i ~/conf/hurc-web.pem ubuntu@ec2-52-91-229-108.compute-1.amazonaws.com"},
@@ -39,6 +30,8 @@
         {"alias" : "grep", "cmd" : "grep --color=auto"},
         {"alias" : "bc", "cmd" : "bc -l"},
         {"alias" : "diff", "cmd" : "colordiff"},
-        {"alias" : "mkdir", "cmd" : "mkdir -pv"}
+        {"alias" : "mkdir", "cmd" : "mkdir -pv"},
+        {"alias" : "restart-net", "cmd" : "sudo service network-manager restart"},
+        {"alias" : "matrix", "cmd" : "bash ~/Projects/bashGen/scripts/hack.sh"}
     ]
 }

@@ -1,9 +1,19 @@
 # Git commands
 
+git config --global color.ui true
+git config --global format.pretty short
+git config --global core.autocrl input
+git config --global core.fileMode true
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global merge.tool vimdiff
+git config --global merge.conflictstyle diff3
+git config --global mergetool.prompt false
+
 alias gps="git push"
 alias gpu="git pull"
 alias gco="git checkout"
 alias gb="git branch"
 alias gs="git status"
 alias gc="git commit -am"
-
+alias gm="git mergetool"
+alias gl="git log"

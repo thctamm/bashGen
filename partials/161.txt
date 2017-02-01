@@ -1,0 +1,25 @@
+161-comp() {
+    _mydir="$(pwd)";
+    cd ~/Projects/cs161/os161/kern/conf;
+    ./config ASST$1;
+    cd ../compile/ASST$1;
+    bmake depend;
+    bmake;
+    bmake install;
+    cd $_mydir;
+}
+
+161-run() {
+    cd ~/Projects/cs161/root;
+    if [ $# -eq 0 ]
+        then
+            sys161 kernel;
+        else
+            sys161 -w kernel;
+    fi
+}
+
+161-gdb() {
+    cd ~/Projects/cs161/root;
+    os161-gdb kernel; 
+}
