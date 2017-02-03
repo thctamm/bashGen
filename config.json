@@ -13,7 +13,8 @@
         "bashgen.txt",
         "161.txt",
         "install.txt",
-        "style.txt"
+        "style.txt",
+        "powerline.txt"
     ],
     "projects" : [
         {"alias" : "rand", "dir" : "rand"},
