@@ -3,12 +3,16 @@
 bashgen() {
     local CURDIR=$(pwd);
     cd ~/Projects/bashGen;
-    vim config.json;
+    if [ $# -eq 1 ]
+        then
+            vim config.json;
+    fi
     node bashgen.js;
     mv bash_profile ~/.bash_profile;
     source ~/.bash_profile;
-    cp confs/.tmux.conf ~/;
-    cp confs/.vimrc ~/;
+    cp confs/tmux.conf ~/.tmux.conf;
+    cp confs/vimrc ~/.vimrc;
+    cp confs/powerline_tmux.json /usr/local/lib/python2.7/dist-packages/powerline/config_files/themes/tmux/default.json;
     cd $CURDIR;
 }
 

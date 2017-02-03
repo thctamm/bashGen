@@ -3,14 +3,34 @@ sapti() {
 }
 
 setup-tools() {
+    sudo apt update;
+    sapti npm;
+    sapti nodejs;
     sapti tmux; #tmux
     sapti git; #git
+    sapti build-essential cmake;
+    sapti python-dev python3-dev;
+    sapti powerline;
+    powerline-config tmux setup;
+}
+
+setup-keys() {
+    cd ~/;
+    mkdir .ssh;
+    mkdir backup;
+    mv key backup/;
+    mv key.pub backup/;
+    ssh-keygen -t rsa -C $1;
 }
 
 setup-vim() {
     sapti vim; # vim
     sapti vim-gnome #gvim
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim; # Vundle
+    vim +PluginInstall +qall; # Install Vundle plugins
+    vim +BundleInstall +qall # Install Vundle bundles
+    cd ~/.vim/bundle/youcompleteme;
+    ./install.py --clang-completer;
     curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh; # apt-vim
     exec bash; # restart terminal
     apt-vim install -y https://github.com/scrooloose/nerdtree.git; # nerd-tree
@@ -18,8 +38,15 @@ setup-vim() {
 }
 
 setup-all() {
-    setup-tools;
-    setup-vim;        
+    if [ $# -eq 0 ]
+        then
+           echo "Usage: setup-all <your email>"; 
+        else
+            setup-keys $1;
+            setup-tools;
+            setup-vim; 
+            bashgen -w;
+    fi
 }
 
 

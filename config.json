@@ -12,7 +12,8 @@
         "cd.txt",
         "bashgen.txt",
         "161.txt",
-        "install.txt"
+        "install.txt",
+        "style.txt"
     ],
     "projects" : [
         {"alias" : "rand", "dir" : "rand"},

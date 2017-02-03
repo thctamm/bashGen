@@ -19,6 +19,11 @@
     fi
 }
 
+161-crun() {
+    161-comp;
+    161-run;
+}
+
 161-gdb() {
     cd ~/Projects/cs161/root;
     os161-gdb kernel; 
