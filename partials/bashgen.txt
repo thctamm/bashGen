@@ -12,7 +12,7 @@ bashgen() {
     source ~/.bash_profile;
     cp confs/tmux.conf ~/.tmux.conf;
     cp confs/vimrc ~/.vimrc;
-    cp confs/powerline_tmux.json /usr/local/lib/python2.7/dist-packages/powerline/config_files/themes/tmux/default.json;
+    sudo cp confs/powerline_tmux.json /usr/local/lib/python2.7/dist-packages/powerline/config_files/themes/tmux/default.json;
     cd $CURDIR;
 }
 
