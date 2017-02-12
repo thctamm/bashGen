@@ -9,17 +9,6 @@ git config --global merge.tool vimdiff
 git config --global merge.conflictstyle diff3
 git config --global mergetool.prompt false
 
-gcm() {
-    git commit -a --message=@1;
-}
-
-
-gcp() {
-    git pull;
-    git commit -a --message=$1;
-    git push;
-}
-
 alias gps="git push"
 alias gpu="git pull"
 alias gco="git checkout"
@@ -27,4 +16,4 @@ alias gb="git branch"
 alias gs="git status"
 alias gm="git mergetool"
 alias gl="git log"
-alias gc="gcm"
+alias gc="git commit -am"
