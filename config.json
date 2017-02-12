@@ -6,7 +6,13 @@
             "alias" : "161",
             "dir" : "cs161/os161",
             "div" : ""
-        }],
+        },
+        {
+            "alias" : "134",
+            "dir" : "cs134",
+            "div" : "pset"
+        }
+    ],
     "partials" : [
         "git.txt",
         "cd.txt",
@@ -35,6 +41,7 @@
         {"alias" : "diff", "cmd" : "colordiff"},
         {"alias" : "mkdir", "cmd" : "mkdir -pv"},
         {"alias" : "restart-net", "cmd" : "sudo service network-manager restart"},
-        {"alias" : "matrix", "cmd" : "bash ~/Projects/bashGen/scripts/hack.sh"}
+        {"alias" : "matrix", "cmd" : "bash ~/Projects/bashGen/scripts/hack.sh"},
+        {"alias" : "spip", "cmd" : "sudo pip install"}
     ]
 }

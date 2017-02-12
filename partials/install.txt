@@ -2,14 +2,18 @@ sapti() {
     sudo apt install $1;
 }
 
+setup-python() {
+    sapti python-dev python3-dev;
+    pip install matplotlib;
+    pip install numpy;    
+}
+
 setup-tools() {
-    sudo apt update;
     sapti npm;
     sapti nodejs;
     sapti tmux; #tmux
     sapti git; #git
     sapti build-essential cmake;
-    sapti python-dev python3-dev;
     sapti powerline;
     powerline-config tmux setup;
 }
@@ -42,7 +46,9 @@ setup-all() {
         then
            echo "Usage: setup-all <your email>"; 
         else
+            sudo apt update;
             setup-keys $1;
+            setup-python;
             setup-tools;
             setup-vim; 
             bashgen -w;
