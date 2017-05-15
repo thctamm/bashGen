@@ -42,6 +42,7 @@
         {"alias" : "mkdir", "cmd" : "mkdir -pv"},
         {"alias" : "restart-net", "cmd" : "sudo service network-manager restart"},
         {"alias" : "matrix", "cmd" : "bash ~/Projects/bashGen/scripts/hack.sh"},
-        {"alias" : "spip", "cmd" : "sudo pip install"}
+        {"alias" : "spip", "cmd" : "sudo pip install"},
+        {"alias" : "down", "cmd" : "cd ~/Downloads"}
     ]
 }

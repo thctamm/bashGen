@@ -19,6 +19,11 @@
     fi
 }
 
+161-doom() {
+    cd ~/Projects/cs161/root;
+    sys161 -D $1 kernel;
+}
+
 161-crun() {
     161-comp $1;
     161-run;

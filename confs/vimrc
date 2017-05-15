@@ -12,9 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'christoomey/vim-tmux-navigator'
 
-Plugin 'valloric/youcompleteme'
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'kien/ctrlp.vim'
+
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
@@ -46,12 +48,29 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
-" show existing tab with 4 spaces width
+
+" Spaces & Tabs {{{
 set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
 set expandtab
+set softtabstop=4
+set shiftwidth=4
+set modelines=1
+set autoindent
+" }}}
+
+" UI Layout {{{
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+set wildmenu		" autocomplete for command menu
+set lazyredraw		" lazy redraw, vim can be annoying
+set showmatch           " higlight matching parenthesis
+" }}}
+
+" Searching {{{
+set ignorecase          " ignore case when searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight all matches
+" }}}
 
 map <S-Enter> o<Esc>k
 

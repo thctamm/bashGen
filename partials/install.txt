@@ -32,9 +32,7 @@ setup-vim() {
     sapti vim-gnome #gvim
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim; # Vundle
     vim +PluginInstall +qall; # Install Vundle plugins
-    vim +BundleInstall +qall # Install Vundle bundles
-    cd ~/.vim/bundle/youcompleteme;
-    ./install.py --clang-completer;
+    vim +BundleInstall +qall; # Install Vundle bundles
     curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh; # apt-vim
     exec bash; # restart terminal
     apt-vim install -y https://github.com/scrooloose/nerdtree.git; # nerd-tree
