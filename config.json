@@ -3,14 +3,9 @@
     "projects_root" : "~/Projects",
     "classes" : [
         {
-            "alias" : "161",
-            "dir" : "cs161/os161",
-            "div" : ""
-        },
-        {
-            "alias" : "134",
-            "dir" : "cs134",
-            "div" : "pset"
+            "alias" : "126",
+            "dir" : "cs126",
+            "div" : "hw"
         }
     ],
     "partials" : [
@@ -26,6 +21,9 @@
         {"alias" : "rand", "dir" : "rand"},
         {"alias" : "web", "dir" : "website"},
         {"alias" : "shgen", "dir" : "bashGen"},
+        {"alias" : "pac", "dir" : "Pacbot/2017-2018/gameEngine"},
+        {"alias" : "robo", "dir" : "robomodules"},
+        {"alias" : "mate", "dir" : "MATE_ROV"},
         {"alias" : "soch", "dir" : "soch-cafe"}
     ],
     "aliases" : [
@@ -43,6 +41,7 @@
         {"alias" : "restart-net", "cmd" : "sudo service network-manager restart"},
         {"alias" : "matrix", "cmd" : "bash ~/Projects/bashGen/scripts/hack.sh"},
         {"alias" : "spip", "cmd" : "sudo pip install"},
-        {"alias" : "down", "cmd" : "cd ~/Downloads"}
+        {"alias" : "down", "cmd" : "cd ~/Downloads"},
+        {"alias" : "ssh263", "cmd" : "ssh httpd@192.168.26.3"}
     ]
 }

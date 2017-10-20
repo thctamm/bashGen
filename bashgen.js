@@ -68,6 +68,7 @@ if ('home' in config) {
 
 // keep track of project root and add a shortcut to it
 addCd('pro', config['projects_root']);
+addCd('proj', config['projects_root']);
 
 // add classes
 for (var i = 0, len = config.classes.length; i < len; i++) {
